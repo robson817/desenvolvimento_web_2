@@ -5,7 +5,7 @@ import { fotoValidator, fotoUpdateValidator, fotoIdValidator } from '../validato
 const router = Router()
 
 router.get('/', FotoController.index)
-router.post('/fotos', fotoValidator, FotoController.create)
+router.post('/', fotoValidator, FotoController.create)
 // router.get('/:id', fotoIdValidator, FotoController.show)
 // router.put('/:id', fotoUpdateValidator, FotoController.update)
 // router.delete('/:id', fotoIdValidator, FotoController.delete)
